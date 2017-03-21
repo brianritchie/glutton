@@ -1,0 +1,13 @@
+language: go
+
+go:
+- tip
+
+branches:
+  only:
+    - master
+
+sudo: false
+
+script:
+- go test -timeout 20m -v ./...;

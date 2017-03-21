@@ -27,7 +27,6 @@ func main() {
 
 	//The next two lines are a token output of all the Subreddits declared in the file
 	fmt.Print("\nSubreddits to parse are...\n")
-
 	fmt.Print("\nhttps://reddit.com/r/"+ string(dat))
 
 	//Creation of Client as suggested to handle requests to Reddit
