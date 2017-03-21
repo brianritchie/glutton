@@ -1,5 +1,7 @@
 # glutton
 
+[![Build Status](https://travis-ci.org/brianritchie/glutton.svg?branch=master)](https://travis-ci.org/brianritchie/glutton)
+
 _**glutton**_ is a Reddit Image _and/or_ GIF _and/or_ Video extractor written in Go targeting Gfycat and Imgur links.
 
 This repository contains:
