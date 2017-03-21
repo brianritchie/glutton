@@ -35,4 +35,6 @@ _testmain.go
 !.vscode/launch.json
 !.vscode/extensions.json
 
+.vscode
+.idea
 .idea/*
