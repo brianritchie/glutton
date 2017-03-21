@@ -1,6 +1,6 @@
-# Glutton
+# glutton
 
-_**Glutton**_ is a Reddit Image _and/or_ GIF _and/or_ Video extractor targeting Gfycat and Imgur Individual and Album links.
+_**glutton**_ is a Reddit Image _and/or_ GIF _and/or_ Video extractor written in Go targeting Gfycat and Imgur links.
 
 This repository contains:
 
@@ -15,3 +15,5 @@ This repository contains:
 - [License](#license)
 
 ## Background
+
+_**glutton**_ was created to satisfy a selfish want and need to learn Go while working on something that solved a personal itch.
