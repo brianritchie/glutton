@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 	"io/ioutil"
-	"net/http"
 	"log"
+	"net/http"
 )
 
 // This is an error function that triggers if an Error occurs
@@ -27,13 +27,15 @@ func main() {
 
 	//The next two lines are a token output of all the Subreddits declared in the file
 	fmt.Print("\nSubreddits to parse are...\n")
-	fmt.Print("\nhttps://reddit.com/r/"+ string(dat))
+	fmt.Print("\nhttps://reddit.com/r/" + string(dat))
+	fmt.Print("\nhttp://www.reddit.com/r/" + string(dat) + "/.json?sort=top&t=all")
 
 	//Creation of Client as suggested to handle requests to Reddit
 	client := &http.Client{}
 
 	//Http Request is fed the URL of the Subreddit - Currently only supporting a single line
-	request, err := http.NewRequest("GET", "http://reddit.com/r/"+string(dat), nil)
+	// request, err := http.NewRequest("GET", "http://reddit.com/r/"+string(dat), nil)
+	request, err := http.NewRequest("GET", "http://www.reddit.com/r/"+string(dat)+"/.json?sort=top&t=all", nil)
 
 	//Lines to check if there are any errors that occured on the URL supplied above - Still single line
 	if err != nil {
@@ -55,8 +57,6 @@ func main() {
 	//Close the file since we are done looking at the output
 	resp.Body.Close()
 
-
-
 }
 
 /*
@@ -74,4 +74,4 @@ Current To-Dos in Mind
 - Read more than a single line of input from file and parse each as URL
 - Decide if we want to rely on graw as a wrapper or write own
 
- */
+*/
